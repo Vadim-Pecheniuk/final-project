@@ -1,0 +1,39 @@
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-headline {
+  font-family: $secondary-font-stack;
+  @include font-settings(900, $font-size-headline, 29px);
+  margin-top: 54px;
+  color: $secondary-dark-color;
+}
+
+.headline-text {
+  font-family: $secondary-font-stack;
+  @include font-settings(600, $font-headline-text, 20px);
+  margin-top: 33px;
+}
+
+.headline-text-gray {
+  color: $primary-gray-color;
+}
+
+.headline-text-dark {
+  color: $secondary-dark-color;
+}
+
+.headline-text-orange {
+  color: $primary-orange-color;
+}
+
+.button {
+  @extend %button;
+  // font-family: $secondary-font-stack;
+  width: 250px;
+  height: 48px;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+}

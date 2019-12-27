@@ -1,0 +1,26 @@
+.advantages-pictures {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__list {
+  @extend %list;
+  width: 200px;
+  margin-top: 86px;
+  // flex-basis: 380px;
+  // min-height: 170px;
+}
+
+.advantages__item {
+  flex-basis: auto;
+  min-height: 58px;
+
+  &-text {
+    font-family: $secondary-font-stack;
+    @include font-settings(900, $font-size-subtitle, 20px);
+    color: $secondary-dark-color;
+  }
+}
